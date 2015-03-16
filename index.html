@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<title>Website xyz</title>
+	<meta name="keywords" content="HTML">
+	<meta name="description" content="Html Website">
+	<meta charset="UTF-8">
+	<meta name="author" content="SidTechno">
+	 <link rel="stylesheet" href="style.css">
+	<link href="lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="responsivemobilemenu.css" type="text/css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="responsivemobilemenu.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+
+	<script src='jquery.min.js'></script>
+	<script type="text/javascript">
+	$(".moveslider > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('.moveslider > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('.moveslider');
+	},  5000);
+	</script>
+	<script>
+$(document).ready(function(){
+$('.memberslides').first().addClass('active');
+$('.memberslides').hide();    
+$('.active').show();
+
+    $('#memberbutton-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.memberslides').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.memberslides').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#memberbutton-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.memberslides').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.memberslides').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});
+	</script>
+<script>
+$(document).ready(function(){
+$('.eventslide').first().addClass('active');
+$('.eventslide').hide();    
+$('.active').show();
+
+    $('#eventbutton-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.eventslide').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.eventslide').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#eventbutton-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.eventslide').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.eventslide').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});</script>
+
+<script>
+$(document).ready(function(){
+$('.slide').first().addClass('active');
+$('.slide').hide();    
+$('.active').show();
+
+    $('#button-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.slide').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.slide').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#button-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.slide').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.slide').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});</script>
+	</head>
+	<body>
+			<!--  edit slider popup-->
+		<div id="editslidepopup" class="white_content">
+			<div class="popuptitle">
+				Edit Slides
+			</div>
+			<form action="#" method="post" enctype="multipart/form-data">
+				<input type="text" name="title" class="slidetitle" placeholder="Slide 1 Tilte">
+				<input type="text" name="description" class="slidedescription" placeholder="Slide Description">
+			    <div class="fileUpload btn btn-primary">
+					<input type="file" class="upload" />
+				</div>
+				<div class="imagepreview">Image Preview</div>
+				<div class="breadinslidepopup"></div>
+				<input type="text" name="title" class="slidetitle" placeholder="Slide 1 Tilte">
+				<input type="text" name="description" class="slidedescription" placeholder="Slide Description">
+			    <div class="fileUpload btn btn-primary">
+					<input type="file" class="upload" />
+				</div>
+				<div class="imagepreview">Image Preview</div>
+				<div class="addnewslideplus"><img src="plus.jpg">Add New Slide</div><input type="submit" value="Save" name="UPDATE SLIDES" class="slidesubmitbutton">
+			</form>
+		</div>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('editslidepopup').style.display='none';document.getElementById('slidefade').style.display='none'"><div id="slidefade" class="slideblack_overlay"></div></a>
+			<!--  End of edit slider popup-->
+
+			<!--  edit profile popup-->
+		<div id="editprofilepopup" class="white_content">
+			<div class="popuptitle">
+				Edit Profile
+			</div>
+			<form action="#" method="post" enctype="multipart/form-data">
+				<input type="text" name="firstname" placeholder="First Name" class="profilepopfirstname">
+				<input type="text" name="lastname" placeholder="Last Name" class="profilepoplastname"><br>
+				<input type="text" name="company" placeholder="Company" class="profilepopcompany">
+				<input type="text" name="position" placeholder="Position" class="profilepopposition"><br>
+				<textarea name="profilepopbio"  class="profilepopbio">About your self / Background</textarea><br>
+				<input type="text" name="address" placeholder="Adress" class="profilepopaddress"><br>
+				<input type="text" name="city" placeholder="City" class="profilepopcity">
+				State <input type="text" name="state" placeholder="AK" class="profilepopstate"><br>
+				<input type="text" name="zip" placeholder="Zip Code" class="profilepopzip"><br>	
+				<input type="text" name="phone" placeholder="Phone #" class="profilepopphone"><br>
+				<input type="text" name="email" placeholder="E-mail" class="profilepopmail"><br>
+				<input type="text" name="username" placeholder="Username" class="profilepopuser"><br>
+				<div class="profilepopleft">
+				<input type="text" name="password" placeholder="Password" class="profilepoppass"><br>
+				<input type="text" name="repeatpassword" placeholder="Repeat Password" class="profilepoprepass"><br>
+			    <div class="fileUpload btn btn-primary">
+					<input type="file" class="upload" />
+				</div>
+				<div class="profileimagedp">
+					<img src="#" alt="profilepic">
+				</div>
+				</div>
+				<div class="socialnetwork">
+					<h2>social networks</h2>
+					<input type="text" name="facebook" placeholder="facebook" class="profilepopfacebook"><br>
+					<input type="text" name="twitter" placeholder="twitter" class="profilepoptwitter"><br>
+					<input type="text" name="linkedin" placeholder="linkedin" class="profilepoplinkedin"><br>
+					<input type="text" name="web" placeholder="web" class="profilepopweb">
+				</div>
+				<input type="submit" value="Update Profile" name="UPDATE PROFILE" class="submitbutton">
+			</form>
+		</div>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('editprofilepopup').style.display='none';document.getElementById('profilefade').style.display='none'"><div id="profilefade" class="slideblack_overlay"></div></a>
+			<!--  End of edit profile popup-->
+
+			<!--  login popup-->
+		<div id="loginpopup" class="loginwhite_content">
+			<div class="popuptitle">
+				Login
+			</div>
+			<form action="#" method="post" enctype="multipart/form-data">
+				<input type="text" name="email" placeholder="E-mail">
+				<input type="text" name="password" placeholder="Password">
+				<input type="submit" value="signin" name="Sign in" class="submitbutton" class="loginbutton">
+				<div class="registersigninpop">
+					<span class="leftsigninpop"><a href="#">Register</a></span>
+					<span class="rightsigninpop"><a href="#">Lost password?</a></span>
+				</div>
+			</form>
+		</div>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('loginpopup').style.display='none';document.getElementById('loginfade').style.display='none'"><div id="loginfade" class="loginblack_overlay"></div></a>
+			<!--  End of login popup-->
+
+			<!--  add event popup-->
+		<div id="addeventpopup" class="white_content">
+			<div class="popuptitle">
+				Add Event
+			</div>
+			<form action="#" method="post" enctype="multipart/form-data">
+				<input type="text" name="eventtitle" placeholder="Event Title" class="eventtitle"><br>
+				<textarea name="description"  class="eventdescription">Description of the event</textarea><br>
+				<input type="text" name="eventaddress" placeholder="Address" class="eventaddress"><br>
+				<input type="text" name="city" placeholder="City" class="eventcity">
+				State <input type="text" name="state" placeholder="AK" class="eventstate"><br>
+				<input type="text" name="zip" placeholder="Zip Code" class="eventzip"><br>
+				Event Start Date <input type="text" name="startday" placeholder="DD" class="startday"> 
+				<input type="text" name="startmonth" placeholder="MM" class="startmonth"> 
+				<input type="text" name="startyear" placeholder="YY" class="startyear"><br>
+				Event Start Time <input type="text" name="starthour" placeholder="00" class="starthour"> :
+				<input type="text" name="startmins" placeholder="00" class="startmins"> <br>
+				Event End Date <input type="text" name="endday" placeholder="DD" class="startday"> 
+				<input type="text" name="endmonth" placeholder="MM" class="startmonth"> 
+				<input type="text" name="endyear" placeholder="YY" class="startyear"><br>
+				Event End Time <input type="text" name="endhour" placeholder="00" class="starthour"> :
+				<input type="text" name="endmins" placeholder="00" class="startmins"> <br>
+			    <div class="fileUpload btn btn-primary">
+					<input type="file" class="upload" />
+				</div>
+				<div class="eventimagepreview">Image Preview</div>
+				<input type="submit" value="Submit Event" name="Sign in" class="submitbutton">
+			</form>
+		</div>
+			<a href = "javascript:void(0)" onclick = "document.getElementById('addeventpopup').style.display='none';document.getElementById('eventfade').style.display='none'"><div id="eventfade" class="eventblack_overlay"></div></a>
+		<!--  End of add event popup-->
+
+			<!--  Header and slider-->
+		<div id="header">
+			<!--  login area -->
+			<div class="loginarea">
+				<div class="logintext">
+					<a href = "javascript:void(0)" onclick = "document.getElementById('loginpopup').style.display='block';document.getElementById('loginfade').style.display='block'">
+						Log in
+					</a>
+						/
+					<a href = "javascript:void(0)" onclick = "document.getElementById('editprofilepopup').style.display='block';document.getElementById('profilefade').style.display='block'">
+						Register
+					</a>
+				</div>
+				<div class="avatar">
+					<img src="avatar.png" alt="avatar">
+				</div>
+			</div>
+			<!-- end of login area -->
+			<!--  Logo and menu area -->
+			<div class="logo">
+				<a href="http://sidtechno.com.pk/emmanueljones/"><img src="logo.png" alt="logo"></a>
+			</div>
+			<div class="menu">
+				<ul class="nav">
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/">Home</a>
+					</li>
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/#members">Members</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/calender.html">Events</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li class="loginmenu">
+						<a href="#">Login</a>
+					</li>
+					<li class="loginmenu">
+						<a href="#">Register</a>
+					</li>
+				</ul>
+			</div>
+			<!--  end of Logo and menu area -->
+		</div>
+		<div class="clear"></div>
+		<div id="slider">
+			<div class="editslideoption">
+				<a href = "javascript:void(0)" onclick = "document.getElementById('editslidepopup').style.display='block';document.getElementById('slidefade').style.display='block'">Edit Sildes</a>
+			</div>
+			<div class="leftarrow">
+				<img src="slidearrowl.png" alt="leftarrow" id="button-previous">
+			</div>
+			<div class="rightarrow">
+				<img src="slidearrowr.png" alt="rightarrow" id="button-next">
+			</div>
+			<div class="moveslider">
+			<!--  slide1 -->
+				<div class="slide">
+					<img src="slide1.jpg">
+				</div>
+			<!--  end of slide1 -->
+			<!--  slide2 -->
+				<div class="slide">
+					<img src="DSCN1577.jpg">
+				</div>
+			<!--  end of slide2 -->
+			<!--  slide3 -->
+				<div class="slide">
+					<img src="OGNupesFSLife.jpg">
+				</div>
+			<!--  end of slide3 -->
+			</div>
+		</div>
+			<!--  end of Header and slider-->
+			<!--  Main Area -->
+		<div class="clear"></div>
+		<div id="main">
+			<div class="maxmain">
+			<!--  upcoming event -->
+			<div class="upcomingevent">
+				<h1>Upcoming events</h1>
+					<div class="addeventbut"><a href = "javascript:void(0)" onclick = "document.getElementById('addeventpopup').style.display='block';document.getElementById('eventfade').style.display='block'"><img src="plus.jpg">Add event</a></div>
+				<div class="eventslider">
+					<div class="leftarrow">
+						<img src="eventarrowl.png" alt="leftarrow" id="eventbutton-previous">
+					</div>
+					<div class="rightarrow">
+						<img src="eventarrowr.png" alt="rightarrow" id="eventbutton-next">
+					</div>
+					<div class="movecomingslide">
+					<!--  slide1 -->
+						<div class="eventslide">
+							<div class="eventboxleft eventbox">
+								<div class="eventhead">
+									<div class="eventavatar">
+										<img src="upcoming-icon.jpg" alt="eventimage">
+									</div>
+									<div class="eventheadtitle">
+										Title
+									</div>
+								</div>
+								<div class="eventbody">
+									<div class="eventdatetime">
+										Date: February 02,2015 Time: 17:00 hrs
+									</div>
+									<div class="eventdescription">
+										Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Aliquam at porttitor sem. Aliquam 
+										erat volutpat. Donec placerat nisl 
+										magna, et faucibus arcu 
+										condimentum sed
+									</div>
+									<div class="eventaddress">
+										Place: Full address (link to google map).
+									</div>
+								</div>
+							</div>
+							<div class="eventboxright eventbox">
+								<div class="eventhead">
+									<div class="eventavatar">
+										<img src="upcoming-icon.jpg" alt="eventimage">
+									</div>
+									<div class="eventheadtitle">
+										Title
+									</div>
+								</div>
+								<div class="eventbody">
+									<div class="eventdatetime">
+										Date: February 02,2015 Time: 17:00 hrs
+									</div>
+									<div class="eventdescription">
+										Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Aliquam at porttitor sem. Aliquam 
+										erat volutpat. Donec placerat nisl 
+										magna, et faucibus arcu 
+										condimentum sed
+									</div>
+									<div class="eventaddress">
+										Place: Full address (link to google map).
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--  end of slide1 -->
+					<!--  slide2 -->
+							<div class="eventslide">
+							<div class="eventboxleft eventbox">
+								<div class="eventhead">
+									<div class="eventavatar">
+										<img src="upcoming-icon.jpg" alt="eventimage">
+									</div>
+									<div class="eventheadtitle">
+										Title
+									</div>
+								</div>
+								<div class="eventbody">
+									<div class="eventdatetime">
+										Date: February 02,2015 Time: 17:00 hrs
+									</div>
+									<div class="eventdescription">
+										Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Aliquam at porttitor sem. Aliquam 
+										erat volutpat. Donec placerat nisl 
+										magna, et faucibus arcu 
+										condimentum sed
+									</div>
+									<div class="eventaddress">
+										Place: Full address (link to google map).
+									</div>
+								</div>
+							</div>
+							<div class="eventboxright eventbox">
+								<div class="eventhead">
+									<div class="eventavatar">
+										<img src="upcoming-icon.jpg" alt="eventimage">
+									</div>
+									<div class="eventheadtitle">
+										Title
+									</div>
+								</div>
+								<div class="eventbody">
+									<div class="eventdatetime">
+										Date: February 02,2015 Time: 17:00 hrs
+									</div>
+									<div class="eventdescription">
+										Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Aliquam at porttitor sem. Aliquam 
+										erat volutpat. Donec placerat nisl 
+										magna, et faucibus arcu 
+										condimentum sed
+									</div>
+									<div class="eventaddress">
+										Place: Full address (link to google map).
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--  end of slide2 -->
+					</div>
+				</div>
+			</div>
+		<div class="clear"></div>
+
+			<!--  edit aboutus popup-->
+		<div id="aboutuspopup" class="about_white_content">
+			<div class="popuptitle">
+				Add Info
+			</div>
+			<form action="#" method="post" enctype="multipart/form-data" class="aboutform">
+				<input type="text" name="abouttitle" placeholder="About us title" class="abouttitle">
+				<textarea name="description"  class="aboutdescription">Description</textarea>
+				<input type="text" name="address"  placeholder="Address" class="aboutaddress">
+				<input type="text" name="city" placeholder="City" class="aboutcity">
+				State <input type="text" name="state" placeholder="AK" class="aboutstate">
+				<input type="text" name="zip"  placeholder="ZIP code" class="aboutzip"><br>
+			    <input type="file" name="fileToUpload" id="fileToUpload">
+				<input type="submit" value="Save" name="Sign in" class="submitbutton">
+			</form>
+		</div>
+		<a href = "javascript:void(0)" onclick = "document.getElementById('aboutuspopup').style.display='none';document.getElementById('aboutfade').style.display='none'"><div id="aboutfade" class="slideblack_overlay"></div></a>
+			<!--  End of edit aboutus popup-->
+			<!--  end of upcoming event -->
+			<!--  about us -->
+			</div>
+			<div class="aboutus">
+			<div class="maxmain">
+				<h1>About us</h1>
+				<div class="content">
+					<p>Kappa Alpha Psi , a college Fraternity, now comprised of functioning Undergraduate and Alumni Chapters on major campuses and in cities throughout the country, is the crystallization of a dream. It is the beautiful realization of a vision shared commonly by the late Revered Founders Elder Watson Diggs; John Milton Lee; Byron Kenneth Armstrong;Guy Levis Grant; Ezra Dee Alexander; Henry Tourner Asher;Marcus Peter Blakemore; Paul Waymond Caine; Edward Giles Irvin and George Wesley Edmonds</p>
+				</div>
+				<a href = "javascript:void(0)" onclick = "document.getElementById('aboutuspopup').style.display='block';document.getElementById('aboutfade').style.display='block'">
+				edit info
+				</a>
+			</div>
+			</div>
+			<div class="maxmain">
+			<!--  end of about us -->
+			<!--  member area -->
+			<div id="members">
+				<div id="memberpopup" class="memerber_white_content">
+					<div class="mpopupleft">
+						<div class="mpopupname">Janne Doe</div>
+						<div class="mpopupsubtitle">VP Sales, Jane Doe inc.</div>
+						<div class="mpopupdescription">Background:
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+						at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, 
+						et faucibus arcu condimentum sed
+						</div>
+						<div class="mpopupsocial">
+										<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+										<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+										<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+						</div>
+					</div>
+					<div class="mpopupright">
+						<div class="mpopupimage"><img src="popupmemberimage.jpg"></div>
+					</div>
+				</div>
+				<a href = "javascript:void(0)" onclick = "document.getElementById('memberpopup').style.display='none';document.getElementById('memberfade').style.display='none'"><div id="memberfade" class="eventblack_overlay"></div></a>
+				<div class="rightbutmember">	
+					<div class="membercurrent"><a href="#">current</a></div>
+					<div class="#"><a href="#">Alumni</a></div>
+				</div>
+				<h1>Members</h1>
+				<div class="memberslide">
+					<div class="leftarrow">
+						<img src="eventarrowl.png" alt="leftarrow" id="memberbutton-previous">
+					</div>
+					<div class="rightarrow">
+						<img src="eventarrowr.png" alt="rightarrow" id="memberbutton-next">
+					</div>
+			<!--  slide1 -->
+				<div>
+					<div class="memberslides">
+						<div class="member1">
+							<a href = "javascript:void(0)" onclick = "document.getElementById('memberpopup').style.display='block';document.getElementById('memberfade').style.display='block'">
+								<img src="member1.png" alt="member1" class="memberimage">
+							</a>
+							<div class="name">Janne Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member2">
+							<img src="member2.png" alt="member2" class="memberimage">
+							<div class="name">Joe Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member3">
+							<img src="member3.png" alt="member3" class="memberimage">
+							<div class="name">Janne Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member4">
+							<img src="member4.png" alt="member4" class="memberimage">
+							<div class="name">John Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+					</div>
+			<!--  end of slide1 -->
+			<!--  slide2 -->
+					<div class="memberslides">
+						<div class="member1">
+							<img src="member1.png" alt="member1">
+							<div class="name">Janne Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member2">
+							<img src="member2.png" alt="member2">
+							<div class="name">Joe Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member3">
+							<img src="member3.png" alt="member3">
+							<div class="name">Janne Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+						<div class="member4">
+							<img src="member4.png" alt="member4">
+							<div class="name">John Doe</div>
+							<div class="belowname">VIP Sales Jane Doe, INC</div>
+								<div class="socialicon">
+									<a href="#"><img src="member-fbicon.jpg" alt="facebook"></a>
+									<a href="#"><img src="member-twittericon.jpg" alt="twitter"></a>
+									<a href="#"><img src="member-linkicon.jpg" alt="linkedin"></a>
+								</div>
+						</div>
+					</div>
+				</div>
+			<!--  end of slide2 -->
+				</div>
+			</div>
+			<!--  end of member area -->
+		</div>
+			</div>
+			<!--  end of main area -->
+			<!--  start of footer -->
+		<div id="footer">
+			<div class="maxfooter">
+			<div class="col1">
+				<h2>Pangia</h2>
+				<h3>Company Name</h3>
+				<div class="address">
+					Ave. loop 1<br>Miami, FL<br>Zip 01234
+				</div>
+			</div>
+			<div class="col2">
+				<h2>Social</h2>
+				<div class="socialicon">
+					<a href="#"><img src="footer-fb.png" alt="facebook"></a>
+					<a href="#"><img src="footer-gplus.png" alt="Google Plus"></a>
+					<a href="#"><img src="footer-twitter.png" alt="Twitter"></a>
+					<a href="#"><img src="footer-share.png" alt="Share"></a>
+				</div>
+			</div>
+			<div class="col3">
+				<h2>Call us</h2>
+				<div>
+					182 2569 5896
+				</div>
+			</div>
+			<div class="col4">
+				<h2>Our E-Mail</h2>
+				<div>
+					<a href="info@modu.versus">info@modu.versus</a>
+				</div>
+			</div>
+			<div class="belowfooter">
+				<div class="copyrightdiv">
+					<div class="copyright">Copyright 2015 Pangia</div>
+				</div>
+				<div class="socialicon">
+					<a href="#"><img src="belowfoot-fbicon.jpg" alt="facebook"></a>
+					<a href="#"><img src="belowfoot-gplusicon.jpg" alt="Google Plus"></a>
+					<a href="#"><img src="belowfoot-twittericon.jpg" alt="Twitter"></a>
+					<a href="#"><img src="belowfoot-shareicon.jpg" alt="Share"></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	</body>
+</html>

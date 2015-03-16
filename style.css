@@ -1,0 +1,1657 @@
+﻿body {
+background: #661b05;
+    margin: 0;
+    padding: 0;
+}
+.clear {
+clear:both;
+}
+a {
+text-decoration: none;	
+}
+#header {
+    height: 170px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.editslideoption a{
+    color: #591806;
+}
+.editslideoption {
+    color: #591806;
+    float: right;
+    font-size: 28px;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+#header .loginarea {
+    float: right;
+    margin-right: 26px;
+    max-width: 355px;
+    text-align: right;
+    width: 100%;
+}
+#header .loginarea .logintext {
+  color: #fff;
+    float: left;
+    font-size: 28px;
+    padding-top: 30px;
+    text-align: right;
+    width: 250px;
+}
+#header .loginarea .logintext  a{
+       color: #fff;
+    text-decoration: none;
+}
+#header .avatar {
+    float: right;
+}
+#header .avatar img{
+    width: 86px;
+}
+#header .logo {
+    float: left;
+    margin-top: 85px;
+    max-width: 200px;
+    width: 100%;
+}
+#header .menu {
+    float: left;
+}
+#header .menu ul.nav {
+    list-style: outside none none;
+}
+
+#header .menu ul.nav li {
+    color: #fff;
+    float: left;
+    font-size: 28px;
+    margin-left: 50px;
+    margin-top: 15px;
+    padding-bottom: 8px;
+}
+#slider {
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
+#slider .leftarrow {
+    float: left;
+    left: 3px;
+    margin-top: 145px;
+    position: relative;
+    width: 60px;
+    z-index: 2;
+}
+#slider .leftarrow a {
+
+}
+#slider .leftarrow a img {
+
+}
+#slider .rightarrow {
+    float: right;
+    margin-top: 145px;
+    position: relative;
+    right: 0;
+    width: 60px;
+    z-index: 2;
+}
+#slider .rightarrow a {
+
+}
+#slider .rightarrow a img {
+
+}
+#slider .slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+#slider .slide img {
+    width: 100%;
+    max-height: 500px;
+}
+.moveslider> div { 
+    position: absolute; 
+}
+.maxmain {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+}
+#main {
+    margin: 0 auto;
+    width: 100%;
+}
+#main .upcomingevent {
+text-align: center;
+}
+#main .upcomingevent  h1{
+    background-image: url("title-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 36px;
+    margin: 0 0 20px;
+    padding-bottom: 18px;
+}
+#main .upcomingevent .addeventbut  a{
+    color: #fff;
+}
+#main .upcomingevent .addeventbut  {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -70px;
+    position: relative;
+    text-align: right;
+}
+#main .upcomingevent .addeventbut div {
+
+}
+#main .eventslider {
+
+}
+#main .eventslider .leftarrow  {
+    float: left;
+    width: 45px;
+    margin-top: 165px;
+}
+#main .eventslider .leftarrow a {
+
+}
+#main .eventslider .leftarrow a img {
+
+}
+#main .eventslider .rightarrow {
+    float: right;
+    width: 45px;
+    margin-top: 165px;
+}
+#main .eventslider .rightarrow a {
+
+}
+#main .eventslider .rightarrow a img {
+
+}
+#main .slide2 {
+display:none;
+}
+#main .eventslide {
+
+}
+#main .eventslide .eventboxleft {
+
+}
+#main .eventslide .eventboxright {
+
+}
+#main .eventslide .eventbox  {
+    border: 1px solid #d0ab81;
+    float: left;
+    min-height: 465px;
+    margin: 0 2%;
+    width: 40%;
+}
+#main .eventslide .eventbox .eventhead {
+    padding-top: 50px;
+}
+#main .eventslide .eventbox .eventhead .eventavatar {
+    border: 1px solid #eac880;
+    float: left;
+    margin-left: 55px;
+}
+#main .eventslide .eventbox .eventhead .eventavatar img {
+
+}
+#main .eventslide .eventbox .eventhead div.eventheadtitle {
+   color: #fff;
+    font-size: 36px;
+}
+#main .eventslide .eventbox .eventbody {
+    background: none repeat scroll 0 0 #f0e9b9;
+    border: 1px solid #c19770;
+    color: #2d2d2d;
+    font-size: 18px;
+    margin: 10px 11px 0;
+    min-height: 340px;
+}
+#main .eventslide .eventbox .eventbody div.eventdatetime {
+    float: right;
+    margin-right: 11px;
+    margin-top: 15px;
+    width: 215px;
+}
+#main .eventslide .eventbox .eventbody div.eventdescription {
+    color: #2d2d2d;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 65px;
+    margin-top: 94px;
+    text-align: left;
+}
+#main .eventslide .eventbox .eventbody div.eventaddress {
+    color: #505050;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-align: left;
+}
+#main .aboutus {
+    background-image: url("about-bg.jpg");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 443px;
+    padding-top: 60px;
+    text-align: right;
+}
+#main .aboutus h1{
+  background-image: url("title-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 18px;
+    text-align: center;
+}
+#main .aboutus .content {
+    color: #591806;
+    font-size: 36px;
+    line-height: 34px;
+    margin-top: 35px;
+    text-align: center;
+}
+#main .aboutus .content p{
+
+}
+#main #members {
+     background-position: 100% center;
+    background-repeat: no-repeat;
+    min-height: 594px;
+    padding-top: 60px;
+    text-align: center;
+}
+#main #members h1{
+    background-image: url("title-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 18px;
+}
+#main #members .rightbutmember .membercurrent{
+    margin-right: 180px;
+}
+#main #members .rightbutmember{
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+li.loginmenu {
+display:none;
+}
+.aboutblack_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.profileblack_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.slideblack_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.eventblack_overlay{
+    background: none repeat scroll 0 0 #000;
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.loginblack_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.loginwhite_content {
+display: none;
+position: fixed;
+top: 25%;
+left: 25%;
+width: 50%;
+min-height: 50%;
+padding: 16px;
+border: 5px solid #fff;
+background-color: #661b05;
+z-index:1002;
+overflow: auto;
+}
+.memerber_white_content {
+    background-color: #661b05;
+    border: 5px solid #fff;
+    display: none;
+    min-height: 50%;
+    left: 25%;
+    margin-top: 115px;
+    overflow: auto;
+    padding: 16px;
+    position: absolute;
+    width: 50%;
+    z-index: 1002;
+}
+.about_white_content {
+display: none;
+position: fixed;
+left: 25%;
+width: 50%;
+min-height: 50%;
+padding: 16px;
+border: 5px solid #fff;
+background-color: #661b05;
+z-index:1002;
+overflow: auto;
+}
+#editslidepopup {
+    color: #fff;
+    position: absolute;
+}
+#editslidepopup .slidetitle{
+    border-radius: 10px;
+    color: #878787;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 40%;
+}
+#editslidepopup .slidedescription{
+    border-radius: 10px;
+    color: #878787;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+}
+#editslidepopup .imagepreview{
+    background: none repeat scroll 0 0 #e7ca9c;
+    color: #661b05;
+    font-size: 28px;
+    height: 50px;
+    margin: 10px 0;
+    padding-top: 10px;
+    text-align: center;
+    width: 220px;
+}
+#editslidepopup .addnewslideplus{
+    float: left;
+
+}
+#editslidepopup .slidesubmitbutton{
+    background: none repeat scroll 0 0 #ffdfac;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    color: #661b05;
+    float: right;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.fileToUpload {
+   background-image: url("uploadimage.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    font-size: 0;
+    height: 75px;
+    width: 219px;
+}
+.aboutform {
+    margin-left: 15px;
+}
+.aboutform input {
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#loginpopup {
+    background: none repeat scroll 0 0 rgba(134, 55, 30, 0.7);
+    border: medium none;
+    color: #fff;    text-align: center;
+    padding: 25px;
+}
+.abouttitle {
+    height: 28px;
+    margin-bottom: 15px;
+    width: 95%;
+    color: #878787;
+}
+.aboutdescription {
+    border-radius: 10px;
+    color: #878787;
+    margin-bottom: 10px;
+    min-height: 100px;
+    padding: 10px;
+    width: 94%;
+}
+.aboutaddress {
+    height: 28px;
+    margin-bottom: 10px;
+    width: 95%;
+    color: #878787;
+}
+.aboutcity {
+    height: 28px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: #878787;
+}
+.aboutstate {
+    height: 28px;
+    margin-bottom: 10px;
+    width: 50px;
+    color: #878787;
+}
+.aboutzip {
+    height: 28px;
+    margin-bottom: 10px;
+    width: 100px;
+    color: #878787;
+}
+.aboutform .submitbutton {
+   background: none repeat scroll 0 0 #ffdfac;
+    border: 1px solid #fff;
+    color: #661b05;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+#loginpopup .submitbutton {
+    color: #591806;
+    font-size: 30px;
+    height: 65px;
+    width: 121px;
+}
+#loginpopup .leftsigninpop {
+    color: #fff;
+    float: left;
+    font-size: 38px;
+    text-align: left;
+    width: 50%;
+}
+#loginpopup .leftsigninpop a {
+    color: #fff;
+}
+#loginpopup .rightsigninpop {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    text-align: right;
+    width: 50%;
+}
+#loginpopup .rightsigninpop  a {
+    color: #fff;
+}
+#loginpopup input{
+    background: none repeat scroll 0 0 #e7ca9c;
+    border: 0 none;
+    border-radius: 10px;
+    color: #979797;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 0 5%;
+    width: 90%;
+    font-size: 16px;
+}
+.white_content {
+display: none;
+position: fixed;
+top: 25%;
+left: 25%;
+width: 50%;
+min-height: 50%;
+padding: 16px;
+border: 5px solid #fff;
+background-color: #661b05;
+z-index:1002;
+overflow: auto;
+}
+#main #members .rightbutmember div {
+    background-repeat: no-repeat;
+    border: 5px solid #e7ca9c;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    font-size: 30px;
+    padding: 5px 20px;
+    position: absolute;
+    right: 10px;
+}
+.loginbutton {
+
+}
+#main #members .rightbutmember div a {
+color:#fff;
+    text-transform: uppercase;
+}
+#main #members .memberslide{
+    margin-top: 30px;
+}
+#main #members .memberslide .leftarrow{
+    float: left;
+    margin-top: 165px;
+    width: 45px;
+}
+#main #members .memberslide .rightarrow{
+    float: right;
+    margin-top: 165px;
+    width: 45px;
+}
+#main #members  .memberslide .slide2{
+
+}
+#main #members .memberslide .memberslides{
+
+}
+#main #members .memberslide .memberslides .member2{
+    width: 22%;
+	float: left;
+    margin-top: 45px;
+}
+#main #members .memberslide .memberslides .member3{
+    width: 22%;
+	float: left;
+}
+#main #members .memberslide .memberslides .member4{
+    width: 22%;
+	float: left;
+    margin-top: 45px;
+}
+#main #members .memberslide .memberslides .member1{
+    width: 22%;
+	float: left;
+}
+#main #members .memberslide .memberslides img{
+
+}
+#main #members .memberslide .memberslides .name{
+    color: #fff;
+    font-size: 30px;
+}
+#main #members .memberslide .memberslides .belowname{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#main #members .memberslide .memberslides  .socialicon{
+
+}
+#main #members .memberslide .memberslides .memberimage{
+    max-width: 217px;
+    width: 100%;
+
+}
+#main #members .memberslide .memberslides .socialicon a{
+    margin-right: 5%;
+}
+#main #members .memberslide .memberslides .socialicon a img{
+
+}
+#main .aboutus a {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.maxfooter {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+ }
+#footer {
+    background-image: url("foot-bg.png");
+    background-repeat: repeat-x;
+    height: 310px;
+    margin: 0 auto;
+    width: 100%;
+}
+#footer .col1  {
+   float: left;
+    width: 25%;
+}
+#footer .col1 h2 {
+    color: #661b05;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0 40px;
+}
+#footer .col1 h3 {
+    color: #661b05;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+#footer .col1 div.address {
+    color: #661b05;
+    font-size: 18px;
+    padding-left: 15px;
+}
+#footer .col2  {
+   float: left;
+    width: 25%;
+}
+#footer .col2 h2 {
+    color: #661b05;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0 40px 40px;
+}
+#footer .col2 .socialicon  {
+
+}
+#footer .col2 .socialicon a  {
+ margin-right: 30px;
+}
+#footer .col2 .socialicon a img {
+
+}
+#footer .col3  {
+   float: left;
+    width: 25%;
+}
+#footer .col3 h2 {
+    color: #661b05;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0 40px;
+}
+#footer .col3 div {
+    color: #661b05;
+    font-size: 18px;
+}
+#footer .col4  {
+   float: left;
+    width: 25%;
+}
+#footer .col4 h2 {
+    color: #661b05;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0 40px;
+}
+#footer .col4 div {
+
+}
+#footer .col4 div a{
+    color: #661b05;
+    font-size: 18px;
+}
+#footer .belowfooter {
+    padding-top: 255px;
+}
+#footer .belowfooter .copyrightdiv {
+    float: left;
+    max-width: 300px;
+    width: 50%;
+}
+#footer .belowfooter .copyrightdiv div.copyright {
+    color: #661b05;
+    float: left;
+    font-size: 20px;
+    padding-top: 14px;
+}
+#footer .belowfooter .socialicon {
+    float: right;
+    padding: 14px 0 0;
+}
+#footer .belowfooter .socialicon a  {
+ margin-right: 30px;
+}
+#footer .belowfooter .socialicon a img {
+
+}
+/* gallery page */
+#main ul.gallerymenu{
+   background: none repeat scroll 0 0 #c8b17f;
+    border-radius: 5px;
+    height: 60px;
+    list-style: outside none none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+#main ul.gallerymenu li {
+    border-right: 1px solid #7b0000;
+    display: inline;
+    float: left;
+    font-size: 36px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#main ul.gallerymenu li a{
+    color: #7b0000;
+}
+#main .gallerytitle{
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+    padding: 0 0 0 100px;
+}
+#main ul.gallery{
+    list-style: outside none none;
+    min-height: 11px;
+    padding: 0;
+    width: 100%;
+}
+#main ul.gallery li{
+    float: left;
+    margin-bottom: 35px;
+    margin-right: 33px;
+	background: none repeat scroll 0 0 #e3d8bf;	
+    width: 31%;
+}
+#main ul.gallery li.last{
+    margin: 0;
+}
+#main ul.gallery li a{
+	font-size:0;
+}
+#main ul.gallery li a img{
+    height: 245px;
+    opacity: 0.5;
+    width: 100%;
+}
+#main ul.gallery li a img:hover {
+opacity: 1;
+}
+#main .moregallery{
+    font-size: 32px;
+}
+#main .moregallery h3.moretext a{
+    color: #fff;
+}
+#main .moregallery h3.m	oretext{
+    margin: 0;
+    padding: 0 25px 20px 0;
+    text-align: right;
+    color: #fff;
+}
+/* end of gallery page */
+
+
+/* calender page */
+#main #calender {
+    background: none repeat scroll 0 0 #e7ca9c;
+    min-height: 1200px;
+    width: 100%;
+}
+#main #calender .left {
+    float: left;
+    width: 70%;
+    padding-top: 20px;
+}
+#main #calender .left .topleft{
+    float: left;
+    margin-top: 10px;
+    width: 40%;
+}
+#main #calender .left .topleft span{
+    background: none repeat scroll 0 0 #f3e5cd;
+    border-right: 1px solid #b38d81;
+    color: #661b05;
+    font-size: 30px;
+    padding: 10px;
+}
+#main #calender .left .topright{
+    color: #661b05;
+    float: left;
+    font-size: 30px;
+    width: 60%;
+}
+#main #calender .left .topright .daterange{
+   background: none repeat scroll 0 0 #8c4f32;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    padding: 10px;
+}
+#main #calender .left .midleft{
+    float: left;
+    width: 20%;
+    margin-top: 70px;
+}
+#main #calender .left .midleft img{
+}
+#main #calender .left .midcenter{
+    color: #661b05;
+    float: left;
+    font-size: 60px;
+    text-align: center;
+    width: 60%;
+    margin-top: 70px;
+}
+#main #calender .left .midright{
+    float: left;
+    text-align: right;
+    width: 20%;
+    margin-top: 70px;
+}
+#main #calender .left .midright img{
+
+}
+#main #calender .left .maincalender{
+
+}
+#main #calender .left .maincalender table{
+width:100%;
+}
+#main #calender .left .maincalender table tr{
+    background: none repeat scroll 0 0 #f3e5cd;
+    height: 100px;
+}
+#main #calender .left .maincalender table tr th{
+    border: medium none;
+    color: #661b05;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+#main #calender .left .maincalender table tr td{
+    border: medium none;
+    color: #661b05;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+#main #calender .left .maincalender table tr td.today{
+    background-color: #e3dd95;
+    border-radius: 50px;
+}
+#main #calender .left .maincalender table tr td.curevent{
+    background-image: url("cureventbg.PNG");
+    background-position: 82px 7px;
+    background-repeat: no-repeat;
+}
+#main #calender .right {
+    background: none repeat scroll 0 0 #9f6847;
+    float: left;
+    width: 30%;
+}
+#main #calender .right h2 {
+    background: none repeat scroll 0 0 #661b05;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+#main #calender .right ul {
+    list-style: outside none none;
+    margin-left: 70px;
+    text-align: left;
+}
+#main #calender .right ul li {
+
+}
+#main #calender .right ul li a {
+    color: #fff;
+    font-size: 26px;
+}
+#main #calender .right a.calenderyellow {
+    color: #e3dd95;
+    font-size: 26px;
+}
+#main #calender .right a.calenderselected {
+    color: #e3dd95;
+}
+#main #calender .right ul.eventlike {
+    margin-left: 0;
+    padding: 0 0 0 40px;
+}
+#main #calender .right ul.eventlike li {
+    color: #fff;
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+    width: 40%;
+}
+#main #calender .right ul.eventlike li img {
+
+}
+#main #calender .right ul.eventlike li span {
+
+}
+/* end of calender page */
+
+
+/* popup style */
+
+#memberpopup {
+    border: 5px solid #e7ca9c;
+    color: #fff;
+}
+#memberpopup .mpopupright {
+    float: right;
+    width: 30%;
+}
+#memberpopup .mpopupleft {
+    float: left;
+    text-align: left;
+    width: 70%;
+}
+#memberpopup .mpopupname{
+    font-size: 34px;
+}
+#memberpopup .mpopupimage{
+
+}
+#memberpopup .mpopupimage img{
+width:100%;
+}
+.fileUpload {
+    background: url("uploadimage.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 75px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 219px;
+}
+.breadinslidepopup {
+    margin-bottom: 100px;
+}
+.fileUpload input.upload {
+   cursor: pointer;
+    font-size: 20px;
+    height: 75px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 219px;
+}
+#memberpopup .mpopupsubtitle{
+    font-size: 28px;
+}
+#memberpopup .mpopupdescription{
+    font-size: 20px;
+}
+#memberpopup .mpopupsocial{
+    margin-top: 30px;
+    text-align: center;
+}
+#memberpopup .mpopupsocial a{
+    margin-right: 25px;
+}
+#aboutuspopup {
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+}
+.popuptitle {
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+#editprofilepopup  {
+    color: #fff;
+    position: absolute;
+}
+#editprofilepopup .profilepopfirstname {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepoplastname {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopcompany {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopposition {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 230px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopbio {
+    color: #878787;
+    height: 100px;
+    margin-bottom: 15px;
+    max-width: 475px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopaddress {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 475px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopcity {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+    margin-right: 15px;
+}
+#editprofilepopup .profilepopstate {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 20px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopzip {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 130px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopphone {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopmail {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopuser {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopleft {
+    float: left;
+    max-width: 325px;
+    width: 100%;
+}
+#editprofilepopup .profilepoppass {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepoprepass {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profileimagedp {
+    background: none repeat scroll 0 0 #e7ca9c;
+    border-radius: 79px;
+    color: #661b05;
+    font-size: 24px;
+    height: 80px;
+    margin-top: 20px;
+    padding-top: 47px;
+    text-align: center;
+    width: 140px;
+}
+#editprofilepopup .profileimagedp img {
+
+}
+#editprofilepopup .socialnetwork {
+
+}
+#editprofilepopup .socialnetwork h2 {
+    color: #fff;
+    font-size: 22px;
+}
+#editprofilepopup .profilepopfacebook {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepoptwitter {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepoplinkedin {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .profilepopweb {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+}
+#editprofilepopup .submitbutton {
+    background: none repeat scroll 0 0 #ffdfac;
+    border: 1px solid #fff;
+    color: #661b05;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+#addeventpopup {
+    color: #fff;
+    position: absolute;
+}
+#addeventpopup .popuptitle {
+
+}
+#addeventpopup .eventtitle {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 96%;
+}
+#addeventpopup .eventdescription {
+    color: #878787;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 96%;
+}
+#addeventpopup .eventaddress {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 96%;
+}
+#addeventpopup .eventcity {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 190px;
+    padding: 5px;
+    width: 100%;
+    margin-right: 15px;
+}
+#addeventpopup .eventstate {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 20px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .eventzip {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 130px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .startday {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px; 
+   margin-right: 5px;
+    max-width: 25px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .startmonth {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    max-width: 25px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .startyear {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 50px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .starthour {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 25px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .startmins {
+    border-radius: 5px;
+    color: #878787;
+    height: 28px;
+    margin-bottom: 15px;
+    max-width: 25px;
+    padding: 5px;
+    width: 100%;
+}
+#addeventpopup .eventimagepreview {
+    background: none repeat scroll 0 0 #cfcfcf;
+    border: 1px solid #e7ca9c;
+    color: #661b05;
+    float: left;
+    font-size: 28px;
+    height: 100px;
+    margin-left: 10px;
+    padding-top: 50px;
+    text-align: center;
+    width: 220px;
+}
+#addeventpopup .submitbutton {
+    background: none repeat scroll 0 0 #ffdfac;
+    border: 1px solid #fff;
+    color: #661b05;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    float: right;
+}
+/* end of poppup style */
+
+
+/* responsive */
+@media screen and (min-width: 100px) and (max-width: 960px) { 
+#main ul.gallerymenu {
+display :none;
+}
+}
+@media screen and (min-width: 842px) and (max-width: 960px) { 
+#main ul.gallery li {
+width: 46%;
+}
+#main ul.gallery li.last {
+    margin-right: 33px;
+    margin-bottom: 35px;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 841px) { 
+#main ul.gallery li {
+width: 97%; 
+   margin-left: 5px;
+    margin-right: 5px;
+}
+#main ul.gallery li.last {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 35px;
+}
+#footer .col2 .socialicon {
+    text-align: center;
+}
+#footer .col2 .socialicon a {
+    margin-right: 5px;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 920px) { 
+#main #members {
+    min-height: 940px;
+}
+#main #members .memberslide .memberslides .member1 {
+    width: 40%;
+}
+#main #members .memberslide .memberslides .member2 {
+    width: 40%;
+}
+#main #members .memberslide .memberslides .member3 {
+    width: 40%;
+}
+#main #members .memberslide .memberslides .member4 {
+    width: 40%;
+}
+#main #members h1 {
+    margin: 65px 0 0;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 760px) { 
+#main .eventslide .eventbox {
+    width: 63%;
+}
+#main .upcomingevent .addeventbut {
+    margin-top: 0;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 620px) { 
+#main #members {
+    min-height: 400px;
+    padding-top: 20px;
+}
+#main .upcomingevent {
+margin: 230px auto;
+}
+.member2 {
+display:none;
+}
+.member3 {
+display:none;
+}
+.member4 {
+display:none;
+}
+#main #members .memberslide .leftarrow {
+    margin-top: 100px;
+}
+#main #members .memberslide .rightarrow {
+    margin-top: 100px;
+}
+#main #members .memberslide .memberslides .member1 {
+    width: 70%;
+}
+#main #members .memberslide .memberslides .member2 {
+    width: 95%;
+}
+#main #members .memberslide .memberslides .member3 {
+    width: 95%;
+}
+#main #members .memberslide .memberslides .member4 {
+    width: 95%;
+}
+#footer {
+    background: url("belowfootbg.jpg") repeat-x scroll center bottom #e7d69c;
+ height: 55px;
+}
+#footer .col1 {
+    display:none;
+}
+#footer .col2 {
+    display:none;
+}
+#footer .col3 {
+    display:none;
+}
+#footer .col4{ 
+    display:none;
+}
+#footer .belowfooter .copyrightdiv div.copyright {
+    display:none;
+}
+#footer .belowfooter .copyrightdiv {
+    width: 100%;
+}
+#footer .belowfooter .copyrightdiv {
+    text-align: center;
+}
+#main #members .rightbutmember .membercurrent {
+margin-right: 171px;
+padding: 5px 2px;
+}
+#footer .belowfooter .socialicon {
+    padding: 5px  0 0;
+    width: 100%;
+    text-align: center;
+}
+#footer .belowfooter {
+padding : 0;
+}
+#main .eventslide .eventboxright {
+    margin-bottom: 10px !important;
+    margin-left: 54px !important;
+    margin-top: 10px !important;
+}
+.memberslide .socialicon{
+display:none;
+}
+#main #members .rightbutmember {
+display:none;
+}
+#header .avatar {
+display :none;
+}
+#main .eventslide .eventboxright {
+display:none;
+}
+#header .logo {
+    margin-top: 0;
+    max-width: 100%;
+text-align:center;
+}
+.loginarea {
+display:none;
+}
+.menu {
+    margin: 0 auto !important;
+}
+#slider {
+    height: 160px;
+}
+.addeventbut {
+display:none;
+}
+#main .eventslide .eventbox .eventbody div.eventdescription {
+display:none;
+}
+#main .eventslide .eventbox .eventbody div.eventaddress {
+display:none;
+}
+#main .eventslide .eventbox .eventbody {
+    min-height: 200px;
+}
+#main .eventslide .eventbox {
+    min-height: 325px;
+}
+li.loginmenu {
+display:block !important;
+}
+#main .eventslide .eventbox .eventbody div.eventdatetime {
+    margin-right: 0;
+    width: 196px;
+}
+#main #members h1 {
+margin: 0;
+}
+#main .aboutus {
+    padding-top: 20px;
+}
+#main .eventslide .eventbox .eventhead {
+    padding-top: 10px;
+}
+#footer .belowfooter .socialicon a {
+    margin-right: 10px;
+}
+#slider .rightarrow {
+display:none;
+}
+#slider .leftarrow {
+display:none;
+}
+#main .eventslide .eventbox .eventhead .eventavatar {
+    margin-left: 25px;
+}
+#main .eventslide .eventbox .eventbody {
+    margin: 10px 0 0;
+}
+#slider {
+    margin: 170px auto 0;
+}
+#header {
+    background: none repeat scroll 0 0 #661b05;
+    height: 170px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 4;
+}
+#main #calender {
+    margin-top: 270px;
+}
+#main #calender .left .topright {
+    float: left;
+    width: 100%;
+}
+#main #calender .left .topleft {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+#main #calender .left .maincalender table tr th {
+    font-size: 25px;
+}
+#main #calender .left .maincalender table tr td.curevent {
+    background-position: 10px 7px;
+}
+#main #calender .left .maincalender table tr td {
+    font-size: 25px;
+}
+#main #calender .right ul.eventlike {
+    margin: 0 auto;
+}
+#main #calender .right ul {
+    margin: 0;
+    padding: 0;
+}
+}
+@media screen and (min-width: 845px) and (max-width: 350px) { 
+#main #calender .right ul.eventlike li {
+    width: 100%;
+}
+}
+@media screen and (min-width: 845px) and (max-width: 1000px) { 
+
+#main #calender .right ul.eventlike li {
+    width: 47%;
+    margin-right: 1px;
+}
+#main #calender .right ul {
+ margin-left: 30px;
+}
+#main #calender {
+    min-height: 1270px;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 844px) { 
+#main #calender .left {
+    float: left;
+    width: 100%;
+}
+#main #calender .right{
+    text-align: center;
+    width: 100%;
+}
+#main #calender .right ul {
+    margin-left: 0;
+    text-align: center;
+}
+}
+.hideformobile {
+display :none;
+}

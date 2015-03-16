@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<title>Website xyz</title>
+	<meta name="keywords" content="HTML">
+	<meta name="description" content="Html Website">
+	<meta charset="UTF-8">
+	<meta name="author" content="SidTechno">
+	 <link rel="stylesheet" href="style.css">
+	<link href="lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="responsivemobilemenu.css" type="text/css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="responsivemobilemenu.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+
+	<script src='jquery.min.js'></script>
+	<script type="text/javascript">
+	$(".moveslider > div:gt(0)").hide();
+
+	setInterval(function() { 
+	  $('.moveslider > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('.moveslider');
+	},  5000);
+	</script>
+	<script>
+$(document).ready(function(){
+$('.memberslides').first().addClass('active');
+$('.memberslides').hide();    
+$('.active').show();
+
+    $('#memberbutton-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.memberslides').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.memberslides').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#memberbutton-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.memberslides').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.memberslides').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});
+	</script>
+<script>
+$(document).ready(function(){
+$('.eventslide').first().addClass('active');
+$('.eventslide').hide();    
+$('.active').show();
+
+    $('#eventbutton-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.eventslide').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.eventslide').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#eventbutton-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.eventslide').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.eventslide').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});</script>
+
+<script>
+$(document).ready(function(){
+$('.slide').first().addClass('active');
+$('.slide').hide();    
+$('.active').show();
+
+    $('#button-next').click(function(){
+
+    $('.active').removeClass('active').addClass('oldActive');    
+                   if ( $('.oldActive').is(':last-child')) {
+        $('.slide').first().addClass('active');
+        }
+        else{
+        $('.oldActive').next().addClass('active');
+        }
+    $('.oldActive').removeClass('oldActive');
+    $('.slide').fadeOut();
+    $('.active').fadeIn();
+        
+        
+    });
+    
+       $('#button-previous').click(function(){
+    $('.active').removeClass('active').addClass('oldActive');    
+           if ( $('.oldActive').is(':first-child')) {
+        $('.slide').last().addClass('active');
+        }
+           else{
+    $('.oldActive').prev().addClass('active');
+           }
+    $('.oldActive').removeClass('oldActive');
+    $('.slide').fadeOut();
+    $('.active').fadeIn();
+    });
+    
+    
+    
+    
+});</script>
+	</head>
+	<body>
+			<!--  Header and slider-->
+		<div id="header">
+			<!--  login area -->
+			<div class="loginarea">
+				<div class="logintext">
+					<a href="#">
+						Log in
+					</a>
+						/
+					<a href="#">
+						Register
+					</a>
+				</div>
+				<div class="avatar">
+					<img src="avatar.png" alt="avatar">
+				</div>
+			</div>
+			<!-- end of login area -->
+				<!--  Logo and menu area -->
+			<div class="logo">
+				<a href="http://sidtechno.com.pk/emmanueljones/"><img src="logo.png" alt="logo"></a>
+			</div>
+			<div class="menu">
+				<ul class="nav">
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/">Home</a>
+					</li>
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/#members">Members</a>
+					</li>
+					<li>
+						<a href="http://sidtechno.com.pk/emmanueljones/calender.html">Events</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li class="loginmenu">
+						<a href="#">Login</a>
+					</li>
+					<li class="loginmenu">
+						<a href="#">Register</a>
+					</li>
+				</ul>
+			</div>
+			<!--  end of Logo and menu area -->
+		</div>
+		<div class="clear"></div>
+		<div id="slider">
+			<div class="editslideoption">
+				<a href = "javascript:void(0)" onclick = "document.getElementById('editslidepopup').style.display='block';document.getElementById('slidefade').style.display='block'">Edit Sildes</a>
+			</div>
+			<div class="leftarrow">
+				<img src="slidearrowl.png" alt="leftarrow" id="button-previous">
+			</div>
+			<div class="rightarrow">
+				<img src="slidearrowr.png" alt="rightarrow" id="button-next">
+			</div>
+			<div class="moveslider">
+			<!--  slide1 -->
+				<div class="slide">
+					<img src="slide1.jpg">
+				</div>
+			<!--  end of slide1 -->
+			<!--  slide2 -->
+				<div class="slide">
+					<img src="DSCN1577.jpg">
+				</div>
+			<!--  end of slide2 -->
+			<!--  slide3 -->
+				<div class="slide">
+					<img src="OGNupesFSLife.jpg">
+				</div>
+			<!--  end of slide3 -->
+			</div>
+		</div>
+			<!--  end of Header and slider-->
+			<!--  Main Area -->
+		<div class="clear"></div>
+		<div id="main">
+			<div class="maxmain">
+			<ul class="gallerymenu">
+				<li>
+					<a href="#">Albums</a>
+				</li>
+				<li>
+					<a href="#">Photos</a>
+				</li>
+				<li>
+					<a href="#">Categories</a>
+				</li>
+				<li>
+					<a href="#">Add Category</a>
+				</li>
+				<li>
+					<a href="#">Add Photo</a>
+				</li>
+			</ul>
+			<h3 class="gallerytitle">Albums</h3>
+				<ul class="gallery">
+					<li>
+						<a href="img/demopage/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
+					</li>
+					<li>
+						<a href="DSCN1577.jpg" data-lightbox="example-2"><img class="example-image" src="DSCN1577.jpg" alt="image-2" /></a>
+					</li>
+					<li class="last">
+						<a href="OGNupesFSLife.jpg" data-lightbox="example-3"><img class="example-image" src="OGNupesFSLife.jpg" alt="image-3" /></a>
+					</li>
+					<li>
+						<a href="img/demopage/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
+					</li>
+					<li>
+						<a href="DSCN1577.jpg" data-lightbox="example-2"><img class="example-image" src="DSCN1577.jpg" alt="image-2" /></a>
+					</li>
+					<li class="last">
+						<a href="OGNupesFSLife.jpg" data-lightbox="example-3"><img class="example-image" src="OGNupesFSLife.jpg" alt="image-3" /></a>
+					</li>
+					<li>
+						<a href="img/demopage/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
+					</li>
+					<li>
+						<a href="DSCN1577.jpg" data-lightbox="example-2"><img class="example-image" src="DSCN1577.jpg" alt="image-2" /></a>
+					</li>
+					<li class="last">
+						<a href="OGNupesFSLife.jpg" data-lightbox="example-3"><img class="example-image" src="OGNupesFSLife.jpg" alt="image-3" /></a>
+					</li>
+					<li>
+						<a href="img/demopage/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="img/demopage/image-1.jpg" alt="image-1" /></a>
+					</li>
+					<li>
+						<a href="DSCN1577.jpg" data-lightbox="example-2"><img class="example-image" src="DSCN1577.jpg" alt="image-2" /></a>
+					</li>
+					<li class="last">
+						<a href="OGNupesFSLife.jpg" data-lightbox="example-3"><img class="example-image" src="OGNupesFSLife.jpg" alt="image-3" /></a>
+					</li>
+				</ul>
+				<div class="clear" style="clear:both"></div>
+				<div class="moregallery">
+					<h3 class="moretext"><a href="#">More</a></h3>
+				</div>
+		</div>
+		</div>
+			<!--  end of main area -->
+			<!--  start of footer -->
+		<div id="footer">
+			<div class="maxfooter">
+			<div class="col1">
+				<h2>Pangia</h2>
+				<h3>Company Name</h3>
+				<div class="address">
+					Ave. loop 1<br>Miami, FL<br>Zip 01234
+				</div>
+			</div>
+			<div class="col2">
+				<h2>Social</h2>
+				<div class="socialicon">
+					<a href="#"><img src="footer-fb.png" alt="facebook"></a>
+					<a href="#"><img src="footer-gplus.png" alt="Google Plus"></a>
+					<a href="#"><img src="footer-twitter.png" alt="Twitter"></a>
+					<a href="#"><img src="footer-share.png" alt="Share"></a>
+				</div>
+			</div>
+			<div class="col3">
+				<h2>Call us</h2>
+				<div>
+					182 2569 5896
+				</div>
+			</div>
+			<div class="col4">
+				<h2>Our E-Mail</h2>
+				<div>
+					<a href="info@modu.versus">info@modu.versus</a>
+				</div>
+			</div>
+			<div class="belowfooter">
+				<div class="copyrightdiv">
+					<div class="copyright">Copyright 2015 Pangia</div>
+				</div>
+				<div class="socialicon">
+					<a href="#"><img src="belowfoot-fbicon.jpg" alt="facebook"></a>
+					<a href="#"><img src="belowfoot-gplusicon.jpg" alt="Google Plus"></a>
+					<a href="#"><img src="belowfoot-twittericon.jpg" alt="Twitter"></a>
+					<a href="#"><img src="belowfoot-shareicon.jpg" alt="Share"></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	</body>
+</html>
